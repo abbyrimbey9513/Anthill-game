@@ -1,0 +1,30 @@
+Abby Rimbey
+Basak Erdogan
+
+We have created a single meadow object in which the ants are free to roam
+around and try to get their anthill to be the top dog.
+
+The meadow contains the majority of the code because we are constantly having to search
+through the meadow to get to the hills and to get to the ants wherever they may be.
+There is a method inside the meadow called startFarm() in which the game starts.
+The QueenAnts are called to go about their ways from here, food is placed all around the meadow,
+and then the cycling starts. While we cycle, we make the ants move around and then do their specialty
+(build, collect food and fight.) We also have a backup if the warriors are never able to take down a colony, basically
+if there are no ants left in the hill then the hill dies by default.
+We also print a summary of the hills in the meadow every 5 cycles.
+
+The cell contains a hill, food and ants.
+
+The anthill contains rooms, food, and all three types of ants.
+
+The ant class is a base class for the Forager, Warrior, and builder ants and contains
+the move method that they all share.
+The antshop creates the different types of forager ants using.
+Theses together make up the factory pattern.
+
+The Queen ant builds up the anthills initially and makes sure they have all the right Pieces
+before they can be placed in the meadow.
+
+The rooms can only be of specific types and whatever the type is is later used to create more ants.
+
+The driver code just creates an instance of the meadow and then starts the farm.
